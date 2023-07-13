@@ -5,7 +5,7 @@ export default function Navbar() {
     const toggleTheme = () => {
         setTheme(theme === 'dark' ? 'light' : 'dark');
     };
-    // initially set the theme and "listen" for changes to apply them to the HTML tag
+
     React.useEffect(() => {
         document.querySelector('html').setAttribute('data-theme', theme);
     }, [theme]);

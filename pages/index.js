@@ -19,8 +19,6 @@ export default function Home() {
         <meta property="og:description" content="My personal website where you can find my projects, skills and more." />
         <meta property="og:image" content="https://hedgie.dev/Jan.png" />
         <meta property="og:type" content="website" />
-
-
         <meta charSet="utf-8" />
 
         <link rel="icon" href="/Jan.png" />

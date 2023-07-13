@@ -2,9 +2,6 @@ import { Lilita_One } from "next/font/google"
 import { PT_Sans } from "next/font/google"
 
 const lilita = Lilita_One({ subsets: ['latin-ext'], weight: "400" })
-const pt = PT_Sans({ subsets: ['latin-ext'], weight: "400" })
-
-
 
 export default function Skill(props) {
     let level = ""
