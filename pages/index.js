@@ -3,6 +3,7 @@ import Project from "@/components/Project"
 import Navbar from "@/components/Navbar"
 
 import Head from 'next/head'
+import Image from "next/image"
 
 import { PT_Sans } from "next/font/google"
 
@@ -30,7 +31,7 @@ export default function Home() {
 
           <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-2 rounded-full">
             <div className="bg-white rounded-full">
-              <img src="/Jan.png" className="rounded-full" width="500rem" />
+              <Image src="/Jan.png" className="rounded-full" width={500} height={500} />
             </div>
           </div>
 
@@ -77,7 +78,7 @@ export default function Home() {
             <h2 className={`text-xl ${pt.className}`}>I am a high-school student from Slovakia. I focus on <b>frontend development</b>, creating, managing and moderating <b>Discord servers</b> and developing <b>Discord bots.</b> I am always looking for new ways to improve and gather new experiences. Currently, I am trying out roblox development, content creation and motion graphics. To contact me, check my socials at the bottom of this page.</h2>
           </div>
           <div className="flex flex-col w-full justify-center items-center">
-            <img src="/hedgie.png" className="rounded-xl w-64  justify-center" />
+            <Image src="/hedgie.png" className="rounded-xl justify-center" width={300} height={300} />
             <h3 className="text-xl font-bold text-gray-400 text-center">(made using Midjourney)</h3>
 
           </div>

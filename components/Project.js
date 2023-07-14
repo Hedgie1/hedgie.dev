@@ -1,6 +1,8 @@
 import { PT_Sans } from "next/font/google"
 const pt = PT_Sans({ subsets: ['latin-ext'], weight: "400" })
 
+import Image from 'next/image'
+
 
 export default function Project(props) {
     return (
@@ -13,7 +15,7 @@ export default function Project(props) {
                 <h2 className={`text-xl ${pt.className}`}>{props.description}</h2>
             </div>
             <div className="flex justify-center md:justify-end items-center w-full">
-                <img src={props.photo} className="rounded-xl justify-center h-48" />
+                <Image src={props.photo} className="rounded-xl justify-center" width={200} height={200} />
             </div>
         </div>
     )
