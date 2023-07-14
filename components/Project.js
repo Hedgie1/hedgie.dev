@@ -10,12 +10,12 @@ export default function Project(props) {
             <div className="flex flex-col gap-5">
                 <div className="flex flex-col">
                     <h1 className="text-3xl font-bold">{props.title}</h1>
-                    <h3 className="text-xl font-bold text-gray-400">{props.date}</h3>
+                    <h2 className="text-xl font-bold text-gray-400">{props.date}</h2>
                 </div>
                 <h2 className={`text-xl ${pt.className}`}>{props.description}</h2>
             </div>
             <div className="flex justify-center md:justify-end items-center w-full">
-                <Image src={props.photo} className="rounded-xl justify-center" width={200} height={200} />
+                <Image src={props.photo} className="rounded-xl justify-center" width={200} height={200} alt={"Project " + props.title} />
             </div>
         </div>
     )

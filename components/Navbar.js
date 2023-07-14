@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 export default function Navbar() {
     const [theme, setTheme] = React.useState('dark');
@@ -14,7 +15,7 @@ export default function Navbar() {
         <nav className="flex fixed w-full justify-center items-center ">
             <div className="flex items-center justify-between py-4 px-4 sm:px-16 bg-base-100 shadow-xl m-5 rounded-2xl gap-10">
                 <a className="flex flex-row items-center" href="#">
-                    <img src="/Jan.png" className="h-12 w-12 mr-2 rounded-full" />
+                    <Image src="/Jan.png" className="h-12 w-12 mr-2 rounded-full" width={50} height={50} alt="Photo of myself" />
                     <h1 className="text-lg sm:text-2xl font-bold uppe">Jan Jurdik (Hedgie)</h1>
                 </a>
 
